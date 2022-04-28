@@ -69,11 +69,12 @@ h6 {
   isolation: isolate;
 }
 
+
+
 body {
   background-color: #023047;
 }
 /* HEADER */
-
 header {
   position: sticky;
   top: 0;
@@ -83,9 +84,8 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: rgb(1, 49, 73);
-  padding: 2rem 2rem;
   height: 12vh;
+  padding: 2rem 2rem;
 }
 
 .logo p {
@@ -96,8 +96,8 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-size: 0.9rem;
-  width: 45%;
+  gap: 4rem;
+  font-size: 1rem;
 }
 
 .nav--menu a,
