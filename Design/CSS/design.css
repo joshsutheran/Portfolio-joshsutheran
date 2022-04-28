@@ -246,8 +246,8 @@ div {
   align-items: center;
   background-color: #ccc;
   border: solid 1px #02c5ab;
-  height: 70%;
   width: 80%;
+  height: 80%;
   cursor: none;
 }
 
@@ -298,57 +298,52 @@ div {
 
 /* About Me */
 .about--me {
-  background-color: #023047;
-  height: 88vh;
-  padding-top: 4rem;
-  padding-bottom: 4rem;
+  display: flex;
+  gap: 4rem;
+  align-items: stretch;
+  margin: 0rem 2rem;
+  padding: 6rem 0rem;
+}
+
+.about--me--left {
   margin-left: 10rem;
+  flex-basis: 55%;
+}
+
+.about--me--right {
   margin-right: 10rem;
-  border-top: solid 1px whitesmoke;
-  border-bottom: solid 1px whitesmoke;
+  flex-basis: 45%;
 }
 
 .about--me--header {
-  font-size: 1.5rem;
   display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.about--me--header p {
+  font-size: calc(10px + 1vw);
+}
+
+.about--me--header h4 {
+  font-size: calc(10px + 1vw);
 }
 
 .section--number {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-right: 1rem;
-  font-size: 1rem;
   color: #02c5ab;
 }
 
-.about--me--info {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 2rem;
-  margin-top: 2rem;
-  margin-left: 1rem;
-  opacity: 0.9;
-}
-
 .about--me--text {
+  font-size: calc(3px + 1vw);;
   margin-bottom: 1rem;
 }
 
 .stand--out--text {
   color: #02c5ab;
   font-weight: 600;
-}
-
-.about--me--info--right {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.about--me--info--right img {
-  width: 75%;
-  height: auto;
 }
 
 .skills--list {
