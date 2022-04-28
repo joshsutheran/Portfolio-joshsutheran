@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./Design/CSS/design.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sora:wght@100;200;300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap"
+      rel="stylesheet"
+    />
+    <title>Josh Sutheran Portfolio</title>
+    <script type="module" src="./JS/index.js"></script>
+    <script type="module" defer src="./JS/Snake/game.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="header">
+        <div class="logo">
+          <p>Josh Sutheran</p>
+        </div>
+
+        <div class="nav--menu">
+          <a href="About Me">About Me</a>
+          <a href="Projects">Projects</a>
+          <a href="Contact">Contact</a>
+          <a href="Blog">Blog &#8594</a>
+          <div href="www.google.co.uk" class="green--fade--btn resume">CV</div>
+          <img
+            class="sun--icon"
+            src="./Design/Imgs/sun--icon.png"
+            alt="Sun Icon"
+          />
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="banner">
+        <div class="banner-left">
+          <p class="banner--left--title">Hello! My name is...</p>
+          <h1 class="banner--left--name">Josh Sutheran.</h1>
+          <h2 class="banner--left--job"></h2>
+          <p class="banner--left--text">
+            I'm a Self Taught
+            <span class="stand--out--text">Front End Web Developer</span>,
+            specialising in JavaScript and React. Passion for
+            <span class="stand--out--text">UI/UX and web development</span>.
+            Former teacher and head of department, with
+            <span class="stand--out--text">significant leadership</span> and
+            <span class="stand--out--text">managerial experience.</span>
+          </p>
+          <div class="language--experience icons--list">
+            <div class="language--experience--title">
+              <h3>Proficient in:</h3>
+            </div>
+            <div class="language--experience--icons">
+              <img src="./Design/Imgs/html-5.png" alt="HTML Icon" />
+              <img src="./Design/Imgs/css-3.png" alt="CSS Icon" />
+              <img src="./Design/Imgs/java-script.png" alt="JavaScript Icon" />
+              <img src="./Design/Imgs/nodejs.png" alt="NodeJS Icon" />
+              <img src="./Design/Imgs/physics.png" alt="React Icon" />
+              <img src="./Design/Imgs/typescript.png" alt="typescript icon" />
+            </div>
+          </div>
+          <div class="blue--transition--btn contact--me">Contact Me</div>
+        </div>
+
+        <div class="banner--right">
+          <div class="snake--title">
+            <div class="snake--title--text">
+              <h6>PLAY SNAKE?</h6>
+              <p>Hit the down arrow to begin!</p>
+            </div>
+            <img src="./Design/Imgs/viper.png" alt="Snake Viper Icon" />
+          </div>
+          <div id="game-board" class="snake--box"></div>
+          <div class="snake--score--element">
+            <span class="snake--score--text">TOTAL SCORE</span
+            ><span class="snake--score">0</span>
+          </div>
+        </div>
+      </div>
+      <div class="about--me">
+        <div class="about--me--header">
+          <p class="section--number">01.</p>
+          <h4>About Me</h4>
+        </div>
+        <div class="about--me--info">
+          <div class="about--me--info--left">
+            <p class="about--me--text">
+              I'm a
+              <span class="stand--out--text">front end web developer</span>,
+              with over a year's worth of personal experience. I'm an incredibly
+              determined developer, who has balanced self teaching with leading
+              a Geography department in an inner city SE London school.
+            </p>
+            <p class="about--me--text">
+              I have completed a
+              <span class="stand--out--text">sequenced curriculum</span>,
+              devised and supported by a network of
+              <span class="stand--out--text"
+                >experienced software engineers</span
+              >, that has equipped me with
+              <span class="stand--out--text"
+                >core front end development skills</span
+              >, alongside experience with some
+              <span class="stand--out--text">backend technologies</span>. These
+              include:
+            </p>
+            <ul>
+              <div class="skills--list">
+                <div class="skills--list--left">
+                  <li>HTML 5</li>
+                  <li>CSS and SaSS</li>
+                  <li>JavaScript (ES6+)</li>
+                  <li>Mongo DB</li>
+                </div>
+                <div class="skills-list--right">
+                  <li>Modern React and Redux</li>
+                  <li>Node JS</li>
+                  <li>TypeScript</li>
+                  <li>Express JS</li>
+                </div>
+              </div>
+            </ul>
+            <p class="about--me--text">
+              Alongside my teaching career, I am <span class="stand--out--text">entreprenurial</span>, with experience of <span class="stand--out--text">running multiple businesses.</span> These experiences 
+              have provided me with <span class="stand--out--text">search engine optimisation (SEO) skills, UI/UX design experience</span>, alongside <span class="stand--out--text">online marketing campaigns and advertisement.</span>
+            </p>
+          </div>
+          <div class="about--me--info--right">
+            <img
+              src="./Design/Imgs/java-script.png"
+              alt="Image of Josh Sutheran"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="projects">
+        <div class="projects--header">
+          <p class="section--number">02.</p>
+          <h4>My Latest Projects!</h4>
+        </div>
+        <div class="project--overview--left">
+          <div class="project--information">
+            <h5 class="project--title">Where in the World?</h5>
+            <p class="project--text">
+              <span class="stand--out--text">REST Countries API</span> pulls
+              data on world countries.
+              <span class="stand--out--text">Search and filter</span> by
+              continent.
+              <span class="stand--out--text">Detailed country information</span>
+              renders on click.
+              <span class="stand--out--text"
+                >Bordering countries clickable</span
+              >
+              to explore neighbouring countries.
+              <span class="stand--out--text">Dark and light mode</span> on
+              toggle.
+            </p>
+            <div class="tech--used">
+              <div class="tech--used--title">
+                <h6>Tech Used:</h6>
+              </div>
+              <div class="tech--used--icons icons--list">
+                <img src="./Design/Imgs/html-5.png" alt="HTML 5 icon" />
+                <img src="./Design/Imgs/css-3.png" alt="CSS 3 icon" />
+                <img
+                  src="./Design/Imgs/java-script.png"
+                  alt="JavaScript Icon"
+                />
+                <img src="./Design/Imgs/physics.png" alt="React JS icon" />
+              </div>
+            </div>
+            <div class="project--information--btns">
+              <div
+                id="countries--api--url"
+                class="live--website blue--fade--btn"
+              >
+                <p>Live Website</p>
+            </div>
+              <div class="source--code blue--transition--btn">
+                <p>Source Code</p>
+              </div>
+            </div>
+          </div>
+          <div class="project--image">
+            <img
+              id="rest--countries--api--"
+              class="rest--countries--image"
+              src="./Design/Imgs/rest--countries--api--light.png"
+              alt="REST Countries API Screenshot"
+            />
+          </div>
+        </div>
+        <div class="project--overview--right">
+          <div class="project--image">
+            <img
+              id="rest--countries--api--"
+              class="rest--countries--image"
+              src="./Design/Imgs/rest--countries--api--light.png"
+              alt="REST Countries API Screenshot"
+            />
+          </div>
+          <div class="project--information">
+            <h5 class="project--title">Where in the World?</h5>
+            <p class="project--text">
+              <span class="stand--out--text">REST Countries API</span> pulls
+              data on world countries.
+              <span class="stand--out--text">Search and filter</span> by
+              continent.
+              <span class="stand--out--text">Detailed country information</span>
+              renders on click.
+              <span class="stand--out--text"
+                >Bordering countries clickable</span
+              >
+              to explore neighbouring countries.
+              <span class="stand--out--text">Dark and light mode</span> on
+              toggle.
+            </p>
+            <div class="tech--used">
+              <div class="tech--used--title">
+                <h6>Tech Used:</h6>
+              </div>
+              <div class="tech--used--icons icons--list">
+                <img src="./Design/Imgs/html-5.png" alt="HTML 5 icon" />
+                <img src="./Design/Imgs/css-3.png" alt="CSS 3 icon" />
+                <img
+                  src="./Design/Imgs/java-script.png"
+                  alt="JavaScript Icon"
+                />
+                <img src="./Design/Imgs/physics.png" alt="React JS icon" />
+              </div>
+            </div>
+            <div class="project--information--btns">
+              <div class="live--website blue--fade--btn">
+                <p>Live Website</p>
+              </div>
+              <div class="source--code blue--transition--btn">
+                <p>Source Code</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="project--overview--left">
+          <div class="project--information">
+            <h5 class="project--title">Where in the World?</h5>
+            <p class="project--text">
+              <span class="stand--out--text">REST Countries API</span> pulls
+              data on world countries.
+              <span class="stand--out--text">Search and filter</span> by
+              continent.
+              <span class="stand--out--text">Detailed country information</span>
+              renders on click.
+              <span class="stand--out--text"
+                >Bordering countries clickable</span
+              >
+              to explore neighbouring countries.
+              <span class="stand--out--text">Dark and light mode</span> on
+              toggle.
+            </p>
+            <div class="tech--used">
+              <div class="tech--used--title">
+                <h6>Tech Used:</h6>
+              </div>
+              <div class="tech--used--icons icons--list">
+                <img src="./Design/Imgs/html-5.png" alt="HTML 5 icon" />
+                <img src="./Design/Imgs/css-3.png" alt="CSS 3 icon" />
+                <img
+                  src="./Design/Imgs/java-script.png"
+                  alt="JavaScript Icon"
+                />
+                <img src="./Design/Imgs/physics.png" alt="React JS icon" />
+              </div>
+            </div>
+            <div class="project--information--btns">
+              <div
+                id="countries--api--url"
+                class="live--website blue--fade--btn"
+              >
+                <p>Live Website</p>
+            </div>
+              <div class="source--code blue--transition--btn">
+                <p>Source Code</p>
+              </div>
+            </div>
+          </div>
+          <div class="project--image">
+            <img
+              id="rest--countries--api--"
+              class="rest--countries--image"
+              src="./Design/Imgs/rest--countries--api--light.png"
+              alt="REST Countries API Screenshot"
+            />
+          </div>
+        </div>
+        <div class="other--projects">
+          <div class="projects--header other--projects--title">
+            <h4>Other Projects...</h4>
+          </div>
+          <div class="projects--grid">
+            <div class="project--one">
+              <div class="project--grid--title">
+                <h6">REST Countries API</h6>
+              </div>
+              <div class="project--grid--info">
+                <div class="project--grid--icons">
+                  <img src="./Design/Imgs/github--icon--colour.png" alt="Github Icon">
+                  <img src="./Design/Imgs/world-wide-web.png" alt="WorldWide Web Icon">
+                </div>
+                <div class="project--grid--text">
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia commodi quos itaque sapiente delectus perferendis labore voluptas! Facilis nobis dicta iste labore.</p>
+                </div>
+              </div>
+            </div>
+            <div class="project--two">
+              <div class="project--grid--title">
+                <h6">REST Countries API</h6>
+              </div>
+              <div class="project--grid--info">
+                <div class="project--grid--icons">
+                  <img src="./Design/Imgs/github--icon--colour.png" alt="Github Icon">
+                  <img src="./Design/Imgs/world-wide-web.png" alt="WorldWide Web Icon">
+                </div>
+                <div class="project--grid--text">
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia commodi quos itaque sapiente delectus perferendis labore voluptas! Facilis nobis dicta iste labore.</p>
+                </div>
+              </div>
+            </div>
+            <div class="project--three">
+              <div class="project--grid--title">
+                <h6">REST Countries API</h6>
+              </div>
+              <div class="project--grid--info">
+                <div class="project--grid--icons">
+                  <img src="./Design/Imgs/github--icon--colour.png" alt="Github Icon">
+                  <img src="./Design/Imgs/world-wide-web.png" alt="WorldWide Web Icon">
+                </div>
+                <div class="project--grid--text">
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia commodi quos itaque sapiente delectus perferendis labore voluptas! Facilis nobis dicta iste labore.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="contact--me--section">
+        <div class="contact--me--section--title">
+          <p class="section--number">03.</p>
+          <h5 class="project--title">Contact Me</h5>
+        </div>
+        <div class="contact--me--section--text">
+            <p>
+              I'd love to hear from you! I am currenly <span class="stand--out--text">open to opportunities,</span> so would love to discuss how I might fit 
+              into your organisation!
+            </p>
+        </div>
+        <div class="contact--me--btns">
+          <div href="www.google.co.uk" class="green--fade--btn contact--me--btn">Say Hello!</div>
+        </div>
+      </div>
+      <footer>
+        <div class="footer--text">
+          Designed and Built by <span class="stand--out--text">Josh Sutheran</span>
+        </div>
+        <div class="footer--icons">
+          <img
+            id="github--icon"
+            class="info--bar--left--icon"
+            src="./Design/Imgs/github--icon.png"
+            alt="Github Icon Link"
+          />
+          <img
+            id="mail--icon"
+            class="info--bar--left--icon"
+            src="./Design/Imgs/mail--icon.png"
+            alt="Email Icon Link"
+          />
+          <img
+            id="twitter--icon"
+            class="info--bar--left--icon"
+            src="./Design/Imgs/twitter--icon.png"
+            alt="Twitter Icon Link"
+          />
+          <img
+            id="linkedin--icon"
+            class="info--bar--left--icon final--image"
+            src="./Design/Imgs/linkedin--icon.png"
+            alt="LinkedIn Icon Link"
+          />
+        </div>
+      </footer>
+      <div class="info--bar--left">
+        <img
+          id="github--icon"
+          class="info--bar--left--icon"
+          src="./Design/Imgs/github--icon.png"
+          alt="Github Icon Link"
+        />
+        <img
+          id="mail--icon"
+          class="info--bar--left--icon"
+          src="./Design/Imgs/mail--icon.png"
+          alt="Email Icon Link"
+        />
+        <img
+          id="twitter--icon"
+          class="info--bar--left--icon"
+          src="./Design/Imgs/twitter--icon.png"
+          alt="Twitter Icon Link"
+        />
+        <img
+          id="linkedin--icon"
+          class="info--bar--left--icon final--image"
+          src="./Design/Imgs/linkedin--icon.png"
+          alt="LinkedIn Icon Link"
+        />
+        <div class="vertical--line"></div>
+      </div>
+      <div class="info--bar--right">
+        <p>josh.sutheran@gmail.com</p>
+        <div class="vertical--line"></div>
+      </div>
+    </main>
+  </body>
+</html>
