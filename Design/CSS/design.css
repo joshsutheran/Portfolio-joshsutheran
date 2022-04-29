@@ -788,6 +788,10 @@ footer {
     display: none;
   }
 
+  .nav--menu {
+    display: none;
+  }
+
   .banner--left--title {
     font-size: calc(8px + 1vw);
   }
@@ -799,6 +803,7 @@ footer {
   .language--experience--icons img {
     width: 5vw;
   }
+
 }
 
 @media only screen and (max-width: 550px) {
