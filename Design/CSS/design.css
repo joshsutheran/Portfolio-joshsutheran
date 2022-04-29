@@ -69,16 +69,10 @@ h6 {
   isolation: isolate;
 }
 
-
-
 body {
   background-color: #023047;
 }
 /* HEADER */
-header {
-  position: sticky;
-  top: 0;
-}
 
 .header {
   display: flex;
@@ -129,7 +123,7 @@ div {
   padding: 6rem 0rem;
 }
 
-.banner-left {
+.banner--left {
   flex-basis: 50%;
   display: flex;
   flex-direction: column;
@@ -223,7 +217,8 @@ div {
   justify-content: center;
 }
 
-.snake--title--text h6, .snake--score--text {
+.snake--title--text h6,
+.snake--score--text {
   color: #02c5ab;
   font-family: "Luckiest Guy", sans-serif;
   font-size: calc(20px + 1vw);
@@ -295,7 +290,6 @@ div {
   font-family: "Luckiest Guy", sans-serif;
 }
 
-
 /* About Me */
 .about--me {
   display: flex;
@@ -307,12 +301,15 @@ div {
 
 .about--me--left {
   margin-left: 10rem;
-  flex-basis: 55%;
+  flex-basis: 60%;
 }
 
 .about--me--right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin-right: 10rem;
-  flex-basis: 45%;
+  flex-basis: 40%;
 }
 
 .about--me--header {
@@ -337,7 +334,7 @@ div {
 }
 
 .about--me--text {
-  font-size: calc(3px + 1vw);;
+  font-size: calc(3px + 1vw);
   margin-bottom: 1rem;
 }
 
@@ -457,7 +454,9 @@ div {
   margin-top: 2rem;
 }
 
-.project--one, .project--two, .project--three {
+.project--one,
+.project--two,
+.project--three {
   background-color: #024c71;
   display: flex;
   flex-direction: column;
@@ -469,7 +468,6 @@ div {
 .project--grid--title {
   font-size: 1.5rem;
   color: whitesmoke;
-
 }
 
 .project--grid--info {
@@ -543,7 +541,6 @@ footer {
   gap: 2rem;
   margin-top: 1rem;
   margin-bottom: 4rem;
-
 }
 
 .footer--icons img {
@@ -677,7 +674,6 @@ footer {
   transform: scale(1.05);
 }
 
-
 /* Media Queries */
 
 @media only screen and (max-width: 1200px) {
@@ -687,11 +683,12 @@ footer {
 }
 
 @media only screen and (max-width: 1100px) {
+  /* BANNER */
   .banner--right {
     display: none;
   }
 
-  .banner-left {
+  .banner--left {
     flex-basis: 100%;
     margin-right: 6rem;
   }
@@ -718,12 +715,33 @@ footer {
     width: 4vw;
   }
 
+  /* ABOUT ME */
+  .about--me--left {
+    margin-left: 6rem;
+    flex-basis: 70%;
+  }
+
+  .about--me--header p {
+    font-size: calc(16px + 1vw);
+  }
+
+  .about--me--header h4 {
+    font-size: calc(16px + 1vw);
+  }
+
+  .about--me--text {
+    font-size: calc(6px + 1vw);
+  }
+
+  .about--me--right {
+    margin-right: 6rem;
+    flex-basis: 30%;
+  }
 }
 
 @media only screen and (max-width: 850px) {
-
-  .banner-left {
-    margin: 0rem 4rem;
+  .banner--left {
+    margin: 0rem 2rem;
   }
 
   .banner--left--title {
@@ -741,11 +759,33 @@ footer {
   .language--experience--icons img {
     width: 6vw;
   }
+
+  .about--me {
+    display: block;
+  }
+
+  .about--me--left {
+    margin: 0rem 4rem;
+  }
+
+  .about--me--text {
+    font-size: calc(8px + 1vw);
+  }
+
+  .about--me--right {
+    display: none;
+  }
+
+  /* ABOUT ME */
 }
 
 @media only screen and (max-width: 650px) {
-  .banner-left {
-    margin: 0rem 2rem;
+  .info--bar--left {
+    display: none;
+  }
+
+  .info--bar--right {
+    display: none;
   }
 
   .banner--left--title {
@@ -762,13 +802,15 @@ footer {
 }
 
 @media only screen and (max-width: 550px) {
-
   .banner {
-    padding: 4rem 0rem;
+    display: block;
+    padding: 2rem 0rem;
+    margin: 0rem 1rem;
   }
 
-  .banner-left {
-    margin: 0rem 2rem;
+  .banner--left {
+    margin: 0rem 1rem;
+    padding: 4rem 0rem;
   }
 
   .banner--left--title {
@@ -779,5 +821,12 @@ footer {
   .banner--left--name {
     font-size: calc(40px + 1vw);
   }
-}
 
+  .banner--left--job {
+    min-height: 4rem;
+  }
+
+  .banner--left--text {
+    margin-top: 6rem;
+  }
+}
