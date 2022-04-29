@@ -800,8 +800,16 @@ footer {
     font-size: calc(50px + 1vw);
   }
 
+  .banner--left--job {
+    white-space: normal;
+  }
+
   .language--experience--icons img {
     width: 5vw;
+  }
+
+  .projects--grid {
+    display: none;
   }
 
 }
@@ -815,7 +823,7 @@ footer {
 
   .banner--left {
     margin: 0rem 1rem;
-    padding: 4rem 0rem;
+    padding: 2rem 0rem;
   }
 
   .banner--left--title {
@@ -829,9 +837,14 @@ footer {
 
   .banner--left--job {
     min-height: 4rem;
+    font-size: calc(30px + 1vw)
   }
 
   .banner--left--text {
-    margin-top: 6rem;
+    margin-top: 2rem;
+  }
+
+  .contact--me {
+    margin-top: 2rem;
   }
 }
