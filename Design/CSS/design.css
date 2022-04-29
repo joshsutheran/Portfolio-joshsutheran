@@ -295,12 +295,13 @@ div {
   display: flex;
   gap: 4rem;
   align-items: stretch;
-  margin: 0rem 2rem;
+  margin: 0rem 12rem;
   padding: 6rem 0rem;
+  border-top: solid 1px whitesmoke;
+  border-bottom: solid 1px whitesmoke;
 }
 
 .about--me--left {
-  margin-left: 10rem;
   flex-basis: 60%;
 }
 
@@ -308,21 +309,21 @@ div {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-right: 10rem;
   flex-basis: 40%;
 }
 
-.about--me--header {
+.section--header {
   display: flex;
+  align-items: center;
   gap: 1rem;
   margin-bottom: 2rem;
 }
 
-.about--me--header p {
+.section--header p {
   font-size: calc(10px + 1vw);
 }
 
-.about--me--header h4 {
+.section--header h4 {
   font-size: calc(10px + 1vw);
 }
 
@@ -333,9 +334,9 @@ div {
   color: #02c5ab;
 }
 
-.about--me--text {
+.about--me--text p {
   font-size: calc(3px + 1vw);
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 
 .stand--out--text {
@@ -353,9 +354,8 @@ div {
 
 /* PROJECTS SECTION */
 .projects {
-  padding-top: 4rem;
-  margin-left: 10rem;
-  margin-right: 10rem;
+  margin: 0rem 12rem;
+  padding-top: 6rem;
   padding-bottom: 10rem;
   border-bottom: solid 1px whitesmoke;
 }
@@ -365,63 +365,57 @@ div {
   font-size: 1.5rem;
 }
 
-.project--overview--left {
-  margin-top: 4rem;
+.projects--grid {
   display: grid;
-  grid-template-columns: 2fr 3fr;
-  gap: 2rem;
-  margin-bottom: 10rem;
-}
-
-.project--overview--right {
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
+  gap: 6rem;
   margin-top: 4rem;
-  margin-bottom: 10rem;
-  display: grid;
-  grid-template-columns: 3fr 2fr;
-  gap: 2rem;
 }
 
 .project--title {
   color: whitesmoke;
   font-weight: 600;
-  font-size: 2rem;
+  font-size: calc(20px + 1vw);
 }
 
 .project--text {
   margin-top: 1rem;
+  font-size: calc(3px + 1vw);
 }
 
 .tech--used {
-  display: grid;
-  grid-template-columns: 1fr 3fr;
+  display: flex;
   margin-top: 2rem;
 }
 
 .tech--used--title {
+  flex-basis: 25%;
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  font-size: 1.5rem;
+  font-size: calc(10px + 1vw);
   font-weight: 600;
   color: rgb(187, 187, 187);
 }
 
 .tech--used--icons {
+  flex-basis: 75%;
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 1rem;
+  gap: 2rem;
   cursor: pointer;
 }
 
 .tech--used--icons img {
-  width: 30px;
+  width: 40px;
   height: auto;
 }
 
 .project--information--btns {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  display: flex;
+  justify-content: flex-start;
   margin-top: 2rem;
   gap: 2rem;
 }
@@ -443,15 +437,13 @@ div {
 }
 
 .other--projects--title {
-  margin-top: 4rem;
-  margin-bottom: 4rem;
+  margin-top: 10rem;
 }
 
-.projects--grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1rem;
-  margin-top: 2rem;
+.other--projects--grid {
+  display: flex;
+  gap: 2rem;
+  margin-top: 4rem;
 }
 
 .project--one,
@@ -463,6 +455,7 @@ div {
   justify-content: center;
   align-items: center;
   padding: 1rem;
+  border-radius: 10px;
 }
 
 .project--grid--title {
@@ -496,7 +489,7 @@ div {
 
 .contact--me--section {
   padding-top: 10rem;
-  margin: 0rem 10rem;
+  margin: 0rem 20rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -507,18 +500,15 @@ div {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-left: -1rem;
 }
 
 .contact--me--section--text {
   text-align: center;
-  margin-top: 2rem;
-  width: 50%;
+  width: 75%;
 }
 
 .contact--me--btns {
   margin-top: 4rem;
-  padding-bottom: 10rem;
 }
 
 .contact--me--btn {
@@ -534,13 +524,14 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-top: 12rem;
 }
 
 .footer--icons {
   display: flex;
   gap: 2rem;
   margin-top: 1rem;
-  margin-bottom: 4rem;
+  margin-bottom: 2rem;
 }
 
 .footer--icons img {
@@ -716,9 +707,13 @@ footer {
   }
 
   /* ABOUT ME */
+
+  .about--me {
+    margin: 0rem 8rem;
+  }
+
   .about--me--left {
-    margin-left: 6rem;
-    flex-basis: 70%;
+    flex-basis: 100%;
   }
 
   .about--me--header p {
@@ -729,13 +724,22 @@ footer {
     font-size: calc(16px + 1vw);
   }
 
-  .about--me--text {
-    font-size: calc(6px + 1vw);
+  .about--me--text p {
+    font-size: calc(8px + 1vw);
+  }
+
+  .skills--list {
+    display: flex;
+    gap: 10rem;
+    margin: 4rem 0rem;
+  }
+
+  .skills--list li {
+    font-size: calc(8px + 1vw);
   }
 
   .about--me--right {
-    margin-right: 6rem;
-    flex-basis: 30%;
+    display: none;
   }
 }
 
@@ -761,22 +765,8 @@ footer {
   }
 
   .about--me {
-    display: block;
+    margin: 0rem 6rem;
   }
-
-  .about--me--left {
-    margin: 0rem 4rem;
-  }
-
-  .about--me--text {
-    font-size: calc(8px + 1vw);
-  }
-
-  .about--me--right {
-    display: none;
-  }
-
-  /* ABOUT ME */
 }
 
 @media only screen and (max-width: 650px) {
@@ -798,6 +788,7 @@ footer {
 
   .banner--left--name {
     font-size: calc(50px + 1vw);
+    margin-top: 0.1rem;
   }
 
   .banner--left--job {
@@ -808,10 +799,22 @@ footer {
     width: 5vw;
   }
 
+  .about--me {
+    margin: 0rem 4rem;
+  }
+
+  .about--me p {
+    font-size: calc(10px + 1vw);
+  }
+
+
+  .skills--list {
+    gap: 6rem;
+  }
+
   .projects--grid {
     display: none;
   }
-
 }
 
 @media only screen and (max-width: 550px) {
