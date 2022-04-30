@@ -369,7 +369,8 @@ div {
   display: grid;
   grid-template-rows: repeat(3, 1fr);
   grid-template-columns: repeat(2, 1fr);
-  gap: 6rem;
+  row-gap: 4rem;
+  column-gap: 2rem;
   margin-top: 4rem;
 }
 
@@ -489,7 +490,6 @@ div {
 
 .contact--me--section {
   padding-top: 10rem;
-  margin: 0rem 20rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -504,7 +504,7 @@ div {
 
 .contact--me--section--text {
   text-align: center;
-  width: 75%;
+  width: 40%;
 }
 
 .contact--me--btns {
@@ -619,6 +619,7 @@ footer {
   border-radius: 5px;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
+  width: 10rem;
 }
 .blue--fade--btn:hover,
 .blue--fade--btn:active {
@@ -657,6 +658,10 @@ footer {
   background: linear-gradient(to left, #023047 50%, rgb(2, 197, 171) 50%) right;
   background-size: 200%;
   transition: 0.5s ease-out;
+}
+
+.blue--transition--btn p {
+  white-space: nowrap;
 }
 
 .blue--transition--btn:hover,
@@ -716,11 +721,11 @@ footer {
     flex-basis: 100%;
   }
 
-  .about--me--header p {
+  .section--header p {
     font-size: calc(16px + 1vw);
   }
 
-  .about--me--header h4 {
+  .section--header h4 {
     font-size: calc(16px + 1vw);
   }
 
@@ -730,7 +735,8 @@ footer {
 
   .skills--list {
     display: flex;
-    gap: 10rem;
+    justify-content: space-evenly;
+    align-items: center;
     margin: 4rem 0rem;
   }
 
@@ -741,6 +747,55 @@ footer {
   .about--me--right {
     display: none;
   }
+
+  .projects {
+    margin: 0rem 8rem;
+  }
+
+  .projects--grid {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 4rem 0rem;
+    row-gap: 6rem;
+  }
+
+  .project--information {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .project--text {
+    font-size: calc(6px + 1vw);
+  }
+
+  .tech--used {
+    align-items: center;
+    justify-content: center;
+  }
+
+  .tech--used--title {
+    margin-right: 2rem;
+  }
+
+  .project--image {
+    display: none;
+  }
+
+  .other--projects--grid {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 4rem 6rem;
+  }
+
+  /* Contact Me */
+
 }
 
 @media only screen and (max-width: 850px) {
@@ -765,6 +820,10 @@ footer {
   }
 
   .about--me {
+    margin: 0rem 6rem;
+  }
+
+  .projects {
     margin: 0rem 6rem;
   }
 }
@@ -800,20 +859,40 @@ footer {
   }
 
   .about--me {
-    margin: 0rem 4rem;
+    margin: 0rem 2rem;
   }
 
   .about--me p {
     font-size: calc(10px + 1vw);
   }
 
+  .skills--list li {
+    font-size: calc(10px + 1vw);
+  }
 
-  .skills--list {
-    gap: 6rem;
+  .projects {
+    margin: 0rem 2rem;
   }
 
   .projects--grid {
-    display: none;
+    margin: 4rem 2rem;
+  }
+
+  .project--text {
+    font-size: calc(10px + 1vw);
+  }
+
+  .tech--used--title h6 {
+    font-size: calc(8px + 1vw);
+  }
+  .other--projects--grid {
+    margin-top: 4rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+
+  .contact--me--section--text {
+    width: 60%;
   }
 }
 
