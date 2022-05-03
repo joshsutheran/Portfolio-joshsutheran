@@ -24,17 +24,19 @@
   <body>
     <header>
       <div class="header">
-        <div class="logo">
+        <div class="header__logo">
           <p>Josh Sutheran</p>
         </div>
-        <div class="nav--menu">
+        <div class="header__nav">
           <a href="About Me">About Me</a>
           <a href="Projects">Projects</a>
           <a href="Contact">Contact</a>
           <a href="Blog">Blog &#8594</a>
-          <div href="www.google.co.uk" class="green--fade--btn resume">CV</div>
+        </div>
+        <div class="header__icons">
+          <div href="www.google.co.uk" class="header__cv green--fade--btn">CV</div>
           <img
-            class="sun--icon"
+            class="header__darkmode"
             src="./Design/Imgs/sun--icon.png"
             alt="Sun Icon"
           />
@@ -43,24 +45,24 @@
     </header>
     <main>
       <div class="banner">
-        <div class="banner--left">
-          <p class="banner--left--title">Hello! My name is...</p>
-          <h1 class="banner--left--name">Josh Sutheran.</h1>
-          <h2 class="banner--left--job"></h2>
-          <p class="banner--left--text">
+        <div class="banner__info">
+          <p class="banner__info-title">Hello! My name is...</p>
+          <h1 class="banner__info-name">Josh Sutheran.</h1>
+          <h2 class="banner__info-job"></h2>
+          <p class="banner__info-text">
             I'm a Self Taught
-            <span class="stand--out--text">Front End Web Developer</span>,
+            <span class="stand--out__text">Front End Web Developer</span>,
             specialising in JavaScript and React. Passion for
-            <span class="stand--out--text">UI/UX and web development</span>.
+            <span class="stand--out__text">UI/UX and web development</span>.
             Former teacher and head of department, with
-            <span class="stand--out--text">significant leadership</span> and
-            <span class="stand--out--text">managerial experience.</span>
+            <span class="stand--out__text">significant leadership</span> and
+            <span class="stand--out__text">managerial experience.</span>
           </p>
-          <div class="language--experience icons--list">
-            <div class="language--experience--title">
+          <div class="banner__language icons--list">
+            <div class="banner__language-title">
               <h3>Proficient in:</h3>
             </div>
-            <div class="language--experience--icons">
+            <div class="banner__language-icons">
               <img src="./Design/Imgs/html-5.png" alt="HTML Icon" />
               <img src="./Design/Imgs/css-3.png" alt="CSS Icon" />
               <img src="./Design/Imgs/java-script.png" alt="JavaScript Icon" />
@@ -69,21 +71,21 @@
               <img src="./Design/Imgs/typescript.png" alt="typescript icon" />
             </div>
           </div>
-          <div class="blue--transition--btn contact--me">Contact Me</div>
+          <div class="banner__contact blue--transition--btn">Contact Me</div>
         </div>
 
-        <div class="banner--right">
-          <div class="snake--title">
-            <div class="snake--title--text">
+        <div class="banner__snake">
+          <div class="banner__snake-title">
+            <div class="banner__snake-text">
               <h6>PLAY SNAKE?</h6>
               <p>Hit the down arrow to begin!</p>
             </div>
-            <img class="snake--title--img" src="./Design/Imgs/viper.png" alt="Snake Viper Icon" />
+            <img class="banner__snake-img" src="./Design/Imgs/viper.png" alt="Snake Viper Icon" />
           </div>
-          <div id="game-board" class="snake--box"></div>
-          <div class="snake--score--element">
-            <span class="snake--score--text">TOTAL SCORE</span
-            ><span class="snake--score">0</span>
+          <div id="game-board" class="snake__box"></div>
+          <div class="snake__score-element">
+            <span class="snake__score-text">TOTAL SCORE</span
+            ><span class="snake__score-value">0</span>
           </div>
         </div>
       </div>
@@ -91,55 +93,39 @@
 
 
       <div class="about--me">
-        <div class="about--me--left">
-          <div class="section--header">
-            <p class="section--number">01.</p>
+        <div class="about--me__info">
+          <div class="section__header">
+            <p class="section__number">01.</p>
             <h4>About Me</h4>
           </div>
-          <div class="about--me--text">
+          <div class="about--me__text">
             <p>
               I'm a
-              <span class="stand--out--text">front end web developer</span>,
+              <span class="stand--out__text">front end web developer</span>,
               with over a year's worth of personal experience. I'm an incredibly
               determined developer, who has balanced self teaching with leading
               a Geography department in an inner city SE London school.
             </p>
-            <p class="about--me--text">
+            <p class="about--me__text">
               I have completed a
-                <span class="stand--out--text">sequenced curriculum</span>,
+                <span class="stand--out__text">sequenced curriculum</span>,
               devised and supported by a network of
-                <span class="stand--out--text"
+                <span class="stand--out__text"
                 >experienced software engineers</span
               >, that has equipped me with
-                <span class="stand--out--text"
+                <span class="stand--out__text"
                 >core front end development skills</span
               >, alongside experience with some
-                <span class="stand--out--text">backend technologies</span>. These
+                <span class="stand--out__text">backend technologies</span>. These
               include:
             </p>
-            <ul>
-              <div class="skills--list">
-                <div class="skills--list--left">
-                    <li>HTML 5</li>
-                    <li>CSS and SaSS</li>
-                    <li>JavaScript (ES6+)</li>
-                    <li>Mongo DB</li>
-                </div>
-                <div class="skills-list--right">
-                    <li>Modern React and Redux</li>
-                    <li>Node JS</li>
-                    <li>TypeScript</li>
-                    <li>Express JS</li>
-                </div>
-              </div>
-            </ul>
-            <p class="about--me--text">
-              Alongside my teaching career, I am <span class="stand--out--text">entreprenurial</span>, with experience of <span class="stand--out--text">running multiple businesses.</span> These experiences 
-              have provided me with <span class="stand--out--text">search engine optimisation (SEO) skills, UI/UX design experience</span>, alongside <span class="stand--out--text">online marketing campaigns and advertisement.</span>
+            <p class="about--me__text">
+              Alongside my teaching career, I am <span class="stand--out__text">entreprenurial</span>, with experience of <span class="stand--out__text">running multiple businesses.</span> These experiences 
+              have provided me with <span class="stand--out__text">search engine optimisation (SEO) skills, UI/UX design experience</span>, alongside <span class="stand--out__text">online marketing campaigns and advertisement.</span>
             </p>
           </div>
         </div>
-        <div class="about--me--right">
+        <div class="about--me__image">
           <img
           src="./Design/Imgs/waving.png"
             alt="Image of Josh Sutheran"
@@ -147,25 +133,25 @@
         </div>
       </div>
       <div class="projects">
-        <div class="section--header">
-          <p class="section--number">02.</p>
+        <div class="section__header">
+          <p class="section__number">02.</p>
           <h4>My Latest Projects!</h4>
         </div>
-        <div class="projects--grid">
-          <div class="project--information">
-            <h5 class="project--title">Where in the World?</h5>
-            <p class="project--text">
-              <span class="stand--out--text">REST Countries API</span> pulls
+        <div class="projects__grid">
+          <div class="project__information">
+            <h5 class="project__title">Where in the World?</h5>
+            <p class="project__text">
+              <span class="stand--out__text">REST Countries API</span> pulls
               data on world countries.
-              <span class="stand--out--text">Search and filter</span> by
+              <span class="stand--out__text">Search and filter</span> by
               continent.
-              <span class="stand--out--text">Detailed country information</span>
+              <span class="stand--out__text">Detailed country information</span>
               renders on click.
-              <span class="stand--out--text"
+              <span class="stand--out__text"
                 >Bordering countries clickable</span
               >
               to explore neighbouring countries.
-              <span class="stand--out--text">Dark and light mode</span> on
+              <span class="stand--out__text">Dark and light mode</span> on
               toggle.
             </p>
             <div class="tech--used">
@@ -194,36 +180,36 @@
               </div>
             </div>
           </div>
-          <div class="project--image">
+          <div class="project__image">
             <img
               id="rest--countries--api--"
-              class="rest--countries--image"
+              class="rest--countries__image"
               src="./Design/Imgs/rest--countries--api--light.png"
               alt="REST Countries API Screenshot"
             />
           </div>
-          <div class="project--image">
+          <div class="project__image">
             <img
               id="rest--countries--api--"
-              class="rest--countries--image"
+              class="rest--countries__image"
               src="./Design/Imgs/rest--countries--api--light.png"
               alt="REST Countries API Screenshot Image"
             />
           </div>
-          <div class="project--information">
-            <h5 class="project--title">Where in the World?</h5>
-            <p class="project--text">
-              <span class="stand--out--text">REST Countries API</span> pulls
+          <div class="project__information">
+            <h5 class="project__title">Where in the World?</h5>
+            <p class="project__text">
+              <span class="stand--out__text">REST Countries API</span> pulls
               data on world countries.
-              <span class="stand--out--text">Search and filter</span> by
+              <span class="stand--out__text">Search and filter</span> by
               continent.
-              <span class="stand--out--text">Detailed country information</span>
+              <span class="stand--out__text">Detailed country information</span>
               renders on click.
-              <span class="stand--out--text"
+              <span class="stand--out__text"
                 >Bordering countries clickable</span
               >
               to explore neighbouring countries.
-              <span class="stand--out--text">Dark and light mode</span> on
+              <span class="stand--out__text">Dark and light mode</span> on
               toggle.
             </p>
             <div class="tech--used">
@@ -249,20 +235,20 @@
               </div>
             </div>
           </div>
-          <div class="project--information">
-            <h5 class="project--title">Where in the World?</h5>
-            <p class="project--text">
-              <span class="stand--out--text">REST Countries API</span> pulls
+          <div class="project__information">
+            <h5 class="project__title">Where in the World?</h5>
+            <p class="project__text">
+              <span class="stand--out__text">REST Countries API</span> pulls
               data on world countries.
-              <span class="stand--out--text">Search and filter</span> by
+              <span class="stand--out__text">Search and filter</span> by
               continent.
-              <span class="stand--out--text">Detailed country information</span>
+              <span class="stand--out__text">Detailed country information</span>
               renders on click.
-              <span class="stand--out--text"
+              <span class="stand--out__text"
                 >Bordering countries clickable</span
               >
               to explore neighbouring countries.
-              <span class="stand--out--text">Dark and light mode</span> on
+              <span class="stand--out__text">Dark and light mode</span> on
               toggle.
             </p>
             <div class="tech--used">
@@ -291,15 +277,17 @@
               </div>
             </div>
           </div>
-          <div class="project--image">
+          <div class="project__image">
             <img
               id="rest--countries--api--"
-              class="rest--countries--image"
+              class="rest--countries__image"
               src="./Design/Imgs/rest--countries--api--light.png"
               alt="REST Countries API Screenshot"
             />
           </div>
         </div>
+
+
         <div class="other--projects">
           <div class="projects--header other--projects--title">
             <h4>Other Projects...</h4>
@@ -353,9 +341,9 @@
 
       
       <div class="contact--me--section">
-        <div class="section--header">
-          <p class="section--number">03.</p>
-          <h5 class="project--title">Contact Me</h5>
+        <div class="section__header">
+          <p class="section__number">03.</p>
+          <h4>Contact Me</h4>
         </div>
         <div class="contact--me--section--text">
             <p>
