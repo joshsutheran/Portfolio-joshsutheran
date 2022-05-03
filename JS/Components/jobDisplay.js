@@ -1,4 +1,4 @@
-let currentJob = document.querySelector(".banner--left--job")
+let currentJob = document.querySelector(".banner__info-job")
 
 const roles = [
   "Front End Developer.",
