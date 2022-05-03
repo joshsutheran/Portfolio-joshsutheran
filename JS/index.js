@@ -10,9 +10,6 @@ import {
 } from "./Components/cvIcon.js"
 import openURL from "./Components/onClickHandlers.js"
 
-// HTML ELEMENTS //
-const countriesBtn = document.getElementById("countries--api--url")
-
 // Prevent Default Arrow Key Movements
 window.addEventListener(
   "keydown",
