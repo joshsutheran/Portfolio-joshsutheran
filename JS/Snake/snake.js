@@ -3,7 +3,7 @@ import { getInputDirection } from "./input.js"
 export const SNAKE_SPEED = 10
 const snakeBody = [{ x: 11, y: 11 }]
 let newSegments = 0
-const totalScore = document.querySelector(".snake--score")
+const totalScore = document.querySelector(".snake__score")
 let score = 0
 
 export function update() {

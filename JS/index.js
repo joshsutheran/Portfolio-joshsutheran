@@ -1,6 +1,5 @@
 // IMPORT MODULES //
 import jobDisplay from "./Components/jobDisplay.js"
-import projectImgClick from "./Components/projectImgHandler.js"
 import iconClick from "./Components/iconClickHandler.js"
 import {
   handleResumeClick,
@@ -30,5 +29,4 @@ resume.addEventListener("mouseenter", handleResumeHover)
 resume.addEventListener("mouseleave", handleResumeOut)
 resume.addEventListener("click", handleResumeClick)
 window.addEventListener("load", jobDisplay)
-projectImgClick()
 iconClick()

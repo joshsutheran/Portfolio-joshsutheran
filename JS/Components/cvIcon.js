@@ -1,4 +1,4 @@
-export const resume = document.querySelector(".resume")
+export const resume = document.querySelector(".header__cv")
 
 export const handleResumeHover = () => {
   resume.innerHTML = `<img class="download--btn" src="./Design/Imgs/download-button.png" alt="Download Icon">`
