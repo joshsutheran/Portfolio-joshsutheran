@@ -73,106 +73,155 @@ body {
   background-color: #023047;
 }
 /* HEADER */
-
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 12vh;
   padding: 2rem 2rem;
+  margin: 0 2rem;
 }
 
-.logo p {
+/* LOGO */
+.header__logo p {
   color: whitesmoke;
 }
 
-.nav--menu {
+/* NAVIGATION */
+.header__nav {
+  flex: 1;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 4rem;
+  margin: 0 14rem;
+  gap: 2rem;
   font-size: 1.2vw;
 }
 
-.nav--menu a,
+.header__nav a,
 div {
   color: whitesmoke;
 }
 
-.nav--menu a {
+.header__nav a {
   text-decoration: none;
 }
 
-.nav--menu a:active,
-.nav--menu a:hover {
+.header__nav a:active,
+.header__nav a:hover {
   color: rgb(2, 197, 171);
 }
 
-.sun--icon {
+/* ICONS */
+.header__icons {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.header__cv {
+  margin-right: 2rem;
+}
+
+.header__darkmode {
   width: 20px;
   height: auto;
   cursor: pointer;
 }
 
-/* Main Banner */
+/* MEDIA QUERIES */
+@media screen and (max-width: 1150px) {
+  .header__nav {
+    margin: 0 6rem;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .header__nav {
+    margin: 0 2rem;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .header {
+    margin: 0rem;
+  }
+
+  .header__nav, .header__icons {
+    display: none;
+  }
+
+  .header__nav {
+    font-size: 1.5vw;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .header {
+    margin: 0rem;
+  }
+}
+
+
+/* MAIN BANNER */
 
 .banner {
   display: flex;
-  align-items: stretch;
-  margin: 0rem 2rem;
+  justify-content: space-evenly;
+  margin: 0rem 6rem;
   padding: 6rem 0rem;
 }
 
-.banner--left {
-  flex-basis: 50%;
+.banner__info {
+  width: 50%;
   display: flex;
   flex-direction: column;
-  align-self: center;
-  margin-left: 6rem;
+  align-items: flex-start;
 }
 
-.banner--left--title {
+.banner__info-title {
   color: rgb(2, 197, 171);
-  font-size: calc(4px + 1vw);
+  font-size: 1.2vw;
   letter-spacing: 0.1rem;
 }
 
-.banner--left--name {
-  font-size: calc(50px + 1vw);
+.banner__info-name {
+  font-size: 5vw;
   white-space: nowrap;
   margin-top: -1rem;
 }
 
-.banner--left--job {
+.banner__info-job {
   display: flex;
   align-items: center;
   color: rgb(2, 197, 171);
-  font-size: calc(35px + 1vw);
+  font-size: 3.5vw;
   white-space: nowrap;
-  min-height: 5rem;
   margin-bottom: 1rem;
+  min-height: 5rem;
 }
 
-.banner--left--text {
-  font-size: calc(4px + 1vw);
+.banner__info-text {
+  font-size: 1.5vw;
 }
 
-.language--experience {
+.banner__language {
   display: flex;
-  margin-top: 2rem;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 2vw;
   cursor: pointer;
 }
 
-.language--experience--title {
+.banner__language-title {
   display: flex;
   align-items: center;
-  flex-basis: 30%;
+  margin-right: 2rem;
 }
 
-.language--experience--icons {
+.banner__language-icons {
   display: flex;
   gap: 1rem;
-  flex-basis: 70%;
 }
 
 .icons--list img:hover {
@@ -181,66 +230,65 @@ div {
   box-shadow: 0px 10px 5px -8px #000000;
 }
 
-.language--experience--icons img {
+.banner__language-icons img {
   width: 3vw;
   height: auto;
   white-space: nowrap;
 }
 
-.contact--me {
+.banner__contact {
   margin-top: 4rem;
-  margin-bottom: 1rem;
 }
 
-/* BANNER RIGHT */
+/* SNAKE */
 
-.banner--right {
-  flex-basis: 50%;
+.banner__snake {
+  width: 50%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-right: 6rem;
 }
 
 /* SNAKE GAME */
-.snake--title {
+.banner__snake-title {
+  width: 80%;
   display: flex;
-  gap: 2rem;
+  align-items: center;
+  justify-content: space-evenly;
   margin-bottom: 0.5rem;
 }
 
-.snake--title--text {
+.banner__snake-text {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
-.snake--title--text h6,
-.snake--score--text {
+.banner__snake-text h6,
+.snake__score-text {
   color: #02c5ab;
   font-family: "Luckiest Guy", sans-serif;
-  font-size: calc(20px + 1vw);
+  font-size: 2em;
   letter-spacing: 0.2rem;
 }
 
-.snake--title--text p {
-  font-size: calc(4px + 1vw);
+.banner__snake-text p {
+  font-size: 1.2em;
   margin-top: -0.5rem;
 }
 
-.snake--title img {
-  width: calc(30px + 1vw);
+.banner__snake-title img {
+  width: 3em;
   height: auto;
 }
 
-.snake--box {
+.snake__box {
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: #ccc;
-  border: solid 1px #02c5ab;
   width: 80%;
   height: 80%;
   cursor: none;
@@ -266,19 +314,20 @@ div {
   width: 100%;
 }
 
-.snake--score--element {
+.snake__score-element {
+  width: 80%;
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
   gap: 1rem;
   margin-top: 1rem;
 }
 
-.snake--score--text {
+.snake__score-text {
   white-space: nowrap;
 }
 
-.snake--score {
+.snake__score-value {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -290,66 +339,142 @@ div {
   font-family: "Luckiest Guy", sans-serif;
 }
 
+/* MEDIA QUERIES */
+@media screen and (max-width: 1100px) {
+  .banner__snake-title img {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .banner__info {
+    width: 100%;
+    margin-right: 10%;
+  }
+
+  .banner__info-title {
+    margin-bottom: 0.5rem;
+  }
+
+  .banner__info-name {
+    font-size: 8vw;
+  }
+
+  .banner__info-job {
+    font-size: 6vw;
+    min-height: 6rem;
+  }
+
+  .banner__info-text {
+    font-size: 2vw;
+  }
+
+  .banner__language {
+    margin-top: 2rem;
+  }
+
+  .banner__language-icons img {
+    width: 4vw;
+  }
+
+  .banner__snake {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .banner {
+    margin: 0 2rem;
+  }
+  
+  .banner__info-title {
+    font-size: 3vw;
+  }
+
+  .banner__info-job {
+    font-size: 7vw;
+    min-height: 4.5rem;
+  }
+
+  .banner__info-text {
+    font-size: 3vw;
+  }
+
+  .banner__language-icons img {
+    width: 5vw;
+  }
+
+  .banner__language-title {
+    display: none;
+  }
+}
+
 /* About Me */
 .about--me {
   display: flex;
-  gap: 4rem;
-  align-items: stretch;
   margin: 0rem 12rem;
   padding: 6rem 0rem;
   border-top: solid 1px whitesmoke;
   border-bottom: solid 1px whitesmoke;
 }
 
-.about--me--left {
-  flex-basis: 60%;
+.about--me__info {
+  width: 60%;
 }
 
-.about--me--right {
+.about--me__image {
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-basis: 40%;
+  width: 40%;
 }
 
-.section--header {
+.section__header {
   display: flex;
   align-items: center;
   gap: 1rem;
   margin-bottom: 2rem;
 }
 
-.section--header p {
-  font-size: calc(10px + 1vw);
+.section__header p, h4 {
+  font-size: 2vw;
 }
 
-.section--header h4 {
-  font-size: calc(10px + 1vw);
-}
-
-.section--number {
+.section__number {
   display: flex;
   justify-content: center;
   align-items: center;
   color: #02c5ab;
 }
 
-.about--me--text p {
-  font-size: calc(3px + 1vw);
+.about--me__text p {
+  font-size: 1.5vw;
   margin-bottom: 2rem;
 }
 
-.stand--out--text {
+.stand--out__text {
   color: #02c5ab;
   font-weight: 600;
 }
 
-.skills--list {
-  display: flex;
-  gap: 2rem;
-  margin-top: 2rem;
-  list-style-type: square;
-  margin-bottom: 2rem;
+@media screen and (max-width: 1000px) {
+  .about--me__info {
+    width: 90%;
+  }
+
+  .about--me__text p, .about--me__skills-list-1, .about--me__skills-list-2  {
+    font-size: 2vw;
+  }
+
+  .about--me__image {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .section__header h4 {
+    font-size: 4vw;
+  }
 }
 
 /* PROJECTS SECTION */
@@ -360,12 +485,12 @@ div {
   border-bottom: solid 1px whitesmoke;
 }
 
-.projects--header {
+.projects__header {
   display: flex;
   font-size: 1.5rem;
 }
 
-.projects--grid {
+.projects__grid {
   display: grid;
   grid-template-rows: repeat(3, 1fr);
   grid-template-columns: repeat(2, 1fr);
@@ -374,13 +499,13 @@ div {
   margin-top: 4rem;
 }
 
-.project--title {
+.project__title {
   color: whitesmoke;
   font-weight: 600;
   font-size: calc(20px + 1vw);
 }
 
-.project--text {
+.project__text {
   margin-top: 1rem;
   font-size: calc(3px + 1vw);
 }
@@ -391,7 +516,7 @@ div {
 }
 
 .tech--used--title {
-  flex-basis: 25%;
+  width: 25%;
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -401,7 +526,7 @@ div {
 }
 
 .tech--used--icons {
-  flex-basis: 75%;
+  width: 75%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -421,21 +546,75 @@ div {
   gap: 2rem;
 }
 
-.project--image {
+.project__image {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.project--image img {
+.project__image img {
   padding: 1rem;
   border: solid 2px rgb(2, 197, 171);
 }
 
-.project--img--transform {
+.project__img--transform {
   transition: all 0.3s ease-in-out;
   transform: scale(1.1);
 }
+
+@media screen and (max-width: 1100px) {
+  .projects__grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .project__information {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: solid 1px whitesmoke;
+    padding: 4vw 2vw;
+  }
+
+  .project__title {
+    font-size: 4vw;
+  }
+  
+  .project__text {
+    width: 80%;
+    text-align: center;
+    font-size: 2vw;
+  }
+
+  .tech--used--title {
+    font-size: 2.5vw;
+    width: 35%;
+  }
+
+  .tech--used--icons {
+    width: 65%;
+  }
+  
+  .project__image {
+    display: none;
+  }
+
+  .section__header h4 {
+    font-size: 2.5vw;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .tech--used--icons img {
+    width: 6vw;
+  }
+}
+
+
+/* OTHER PROJECTS */
 
 .other--projects--title {
   margin-top: 10rem;
@@ -897,11 +1076,6 @@ footer {
 }
 
 @media only screen and (max-width: 550px) {
-  .banner {
-    display: block;
-    padding: 2rem 0rem;
-    margin: 0rem 1rem;
-  }
 
   .banner--left {
     margin: 0rem 1rem;
