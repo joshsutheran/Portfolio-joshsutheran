@@ -393,8 +393,12 @@ div {
 }
 
 @media screen and (max-width: 650px) {
+  .header {
+    height: 8vh;
+  }
   .banner {
     margin: 0 2rem;
+    padding: 4rem 0;
   }
   
   .banner__info-title {
@@ -411,7 +415,7 @@ div {
   }
 
   .banner__language-icons img {
-    width: 5vw;
+    width: 7vw;
   }
 
   .banner__language-title {
