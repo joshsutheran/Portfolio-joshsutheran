@@ -405,8 +405,12 @@ div {
     font-size: 3vw;
   }
 
+  .banner__info-name {
+    font-size: 10vw;
+  }
+
   .banner__info-job {
-    font-size: 7vw;
+    font-size: 8vw;
     min-height: 4.5rem;
   }
 
