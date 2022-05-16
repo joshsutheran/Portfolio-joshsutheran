@@ -639,6 +639,14 @@ div {
     width: 6rem;
     font-size: 2.5vw;
   }
+
+  .section__number {
+    font-size: 4vw;
+  }
+
+  .section__header h4 {
+    font-size: 4vw;
+  }
 }
 
 
@@ -704,6 +712,10 @@ div {
     align-items: center;
     margin: 4rem 0rem;
   }
+
+  .project__text {
+    font-size: 2vw;
+  }
 }
 
 @media screen and (max-width: 650px) {
@@ -713,6 +725,18 @@ div {
 
   .other--projects--title {
     margin-top: 8rem;
+  }
+
+  .project__text {
+    font-size: 3vw;
+  }
+
+  .tech--used--icons img {
+    width: 30px;
+  }
+
+  .other--projects--title h4 {
+    font-size: 4vw;
   }
 }
 
@@ -763,16 +787,11 @@ footer {
   margin-top: 12rem;
 }
 
-.footer--icons {
+.footer__icons {
   display: flex;
   gap: 2rem;
   margin-top: 1rem;
   margin-bottom: 2rem;
-}
-
-.footer--icons img {
-  width: 20px;
-  height: auto;
 }
 
 /* Info Bars */
@@ -792,7 +811,7 @@ footer {
   font-size: 0.8rem;
 }
 
-.info--bar--left {
+.info--bar__left {
   position: fixed;
   left: 0;
   bottom: 0;
@@ -802,7 +821,8 @@ footer {
   margin-left: 1rem;
 }
 
-.info--bar--left img {
+.info--bar__left img,
+.footer__icons img {
   width: 20px;
   height: auto;
   margin-bottom: 1.5rem;
@@ -810,7 +830,7 @@ footer {
   transition: all 0.3s ease-in-out;
 }
 
-.info--bar--left--transform {
+.info--bar__left--transform {
   transform: scale(1.75);
   transition: all 0.3s ease-in-out;
 }
