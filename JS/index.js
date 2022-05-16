@@ -7,7 +7,6 @@ import {
   handleResumeOut,
   resume,
 } from "./Components/cvIcon.js"
-import openURL from "./Components/onClickHandlers.js"
 
 // Prevent Default Arrow Key Movements
 window.addEventListener(
