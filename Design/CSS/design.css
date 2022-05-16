@@ -400,17 +400,22 @@ div {
     margin: 0 2rem;
     padding: 4rem 0;
   }
+
+  .banner__info {
+    margin-right: 5%;
+  }
   
   .banner__info-title {
-    font-size: 3vw;
+    font-size: 4vw;
   }
 
   .banner__info-name {
     font-size: 10vw;
+    margin-top: -0.5rem;
   }
 
   .banner__info-job {
-    font-size: 8vw;
+    font-size: 7vw;
     min-height: 4.5rem;
   }
 
@@ -419,7 +424,7 @@ div {
   }
 
   .banner__language-icons img {
-    width: 7vw;
+    width: 10vw;
   }
 
   .banner__language-title {
@@ -505,7 +510,7 @@ div {
   }
 
   .about--me__text p {
-    font-size: 3vw;
+    font-size: 4vw;
   }
 }
 
@@ -663,9 +668,9 @@ div {
     font-size: 5vw;
   }
   .project__text {
-    width: 100%;
     text-align: center;
     font-size: 3vw;
+    width: 80%;
   }
   
   .tech--used--title {
@@ -690,11 +695,11 @@ div {
   }
 
   .section__header h4 {
-    font-size: 4vw;
+    font-size: 6vw;
   }
 
   .section__number {
-    font-size: 4vw;
+    font-size: 6vw;
   }
 }
 
@@ -773,7 +778,7 @@ div {
 
 @media screen and (max-width: 650px) {
   .other__projects--grid {
-    margin: 4rem 2rem;
+    margin: 4rem 0rem;
   }
 
   .other__projects--title h4 {
@@ -785,11 +790,11 @@ div {
   }
 
   .project__grid--title {
-    font-size: 4vw;
+    font-size: 5vw;
   }
   
   .project__grid--text {
-    font-size: 2vw;
+    font-size: 3vw;
   }
 
   .tech--used--icons img {
@@ -836,7 +841,7 @@ div {
   }
 
   .contact--me--section--text {
-    width: 60%;
+    width: 80%;
   }
 
 }
