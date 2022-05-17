@@ -33,7 +33,7 @@
           <a href="Contact">Contact</a>
           <a href="Blog">Blog</a>
         </div>
-          <div href="www.google.co.uk" class="header__cv header__icons green--fade--btn">CV</div>
+          <div class="header__cv header__icons green--fade--btn">CV</div>
       </div>
     </header>
     <main>
@@ -64,7 +64,7 @@
               <img src="./Design/Imgs/typescript.png" alt="typescript icon" />
             </div>
           </div>
-          <div class="banner__contact blue--transition--btn">Contact Me</div>
+          <button class="contact__me banner__contact blue--transition--btn">Contact Me</button>
         </div>
 
         <div class="banner__snake">
@@ -85,7 +85,7 @@
 
 
 
-      <div class="about--me">
+      <div class="about--me reveal">
         <div class="about--me__info">
           <div class="section__header">
             <p class="section__number">01.</p>
@@ -125,7 +125,7 @@
           />
         </div>
       </div>
-      <div class="projects">
+      <div class="projects reveal">
         <div class="section__header">
           <p class="section__number">02.</p>
           <h4>My Latest Projects!</h4>
@@ -164,35 +164,24 @@
           </div>
           <div class="project__image">
             <img
-              id="rest--countries--api--"
+              id="invoice--app"
               class="rest--countries__image"
-              src="./Design/Imgs/rest--countries--api--light.png"
-              alt="REST Countries API Screenshot"
+              src="./Design/Imgs/invoice--app.png"
+              alt="Invoice App Screenshot"
             />
           </div>
           <div class="project__image">
             <img
-              id="rest--countries--api--"
+              id="devjobs--app"
               class="rest--countries__image"
-              src="./Design/Imgs/rest--countries--api--light.png"
-              alt="REST Countries API Screenshot Image"
+              src="./Design/Imgs/devjobs--screenshot.png"
+              alt=""
             />
           </div>
           <div class="project__information">
-            <h5 class="project__title">Where in the World?</h5>
+            <h5 class="project__title">DevJobs Application Board</h5>
             <p class="project__text">
-              <span class="stand--out__text">REST Countries API</span> pulls
-              data on world countries.
-              <span class="stand--out__text">Search and filter</span> by
-              continent.
-              <span class="stand--out__text">Detailed country information</span>
-              renders on click.
-              <span class="stand--out__text"
-                >Bordering countries clickable</span
-              >
-              to explore neighbouring countries.
-              <span class="stand--out__text">Dark and light mode</span> on
-              toggle.
+              <span class="stand--out__text">Jobs Application Board</span> built with<span class="stand--out__text">React JS</span>. Application renders jobs from<span class="stand--out__text">JSON data file</span>. Jobs <span class="stand--out__text">filterable by search term, location and contract type</span>. Job advert <span class="stand--out__text">click renders detailed information</span>. Dark/Light mode.
             </p>
             <div class="tech--used">
               <div class="tech--used--title">
@@ -209,10 +198,10 @@
               </div>
             </div>
             <div class="project--information--btns">
-              <div class="live--website blue--fade--btn">
+              <div class="live--website blue--fade--btn devjobs__click">
                 <p>Live Website</p>
               </div>
-              <div class="source--code blue--transition--btn">
+              <div class="source--code blue--transition--btn devjobs__click--git">
                 <p>Source Code</p>
               </div>
             </div>
@@ -269,7 +258,7 @@
           </div>
         </div>
 
-        <div class="other__projects">
+        <div class="other__projects reveal">
           <div class="projects__header other__projects--title">
             <h4>Other Projects...</h4>
           </div>
@@ -290,7 +279,7 @@
             </div>
             <div class="project__two">
               <div class="project__grid--title">
-                <h6">REST Countries API</h6>
+                <h6>REST Countries API</h6>
               </div>
               <div class="project__grid--info">
                 <div class="project__grid--icons">
@@ -321,7 +310,7 @@
       </div>
 
       
-      <div class="contact--me--section">
+      <div class="contact--me--section reveal">
         <div class="section__header">
           <p class="section__number">03.</p>
           <h4>Contact Me</h4>
@@ -332,8 +321,8 @@
               into your organisation!
             </p>
         </div>
-        <div class="contact--me--btns">
-          <div href="www.google.co.uk" class="green--fade--btn contact--me--btn">Say Hello!</div>
+        <div class="contact--me--btns contact__me">
+          <div class="green--fade--btn contact--me--btn">Say Hello!</div>
         </div>
       </div>
       <footer>

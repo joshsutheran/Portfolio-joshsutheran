@@ -1,6 +1,12 @@
 // IMPORT MODULES //
 import jobDisplay from "./Components/jobDisplay.js"
 import iconClick from "./Components/iconClickHandler.js"
+import footerLinksClick from "./Components/footerClick.js"
+import reveal from "./Components/reveal.js"
+import {
+  contactMeClick,
+  devjobsClick
+}  from "./Components/btnClick.js"
 import {
   handleResumeClick,
   handleResumeHover,
@@ -28,4 +34,8 @@ resume.addEventListener("mouseenter", handleResumeHover)
 resume.addEventListener("mouseleave", handleResumeOut)
 resume.addEventListener("click", handleResumeClick)
 window.addEventListener("load", jobDisplay)
+window.addEventListener("scroll", reveal)
 iconClick()
+contactMeClick()
+footerLinksClick()
+devjobsClick()
