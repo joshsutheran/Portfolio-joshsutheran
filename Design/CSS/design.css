@@ -471,7 +471,7 @@ div {
 }
 
 .about--me__text p {
-  font-size: 1.5vw;
+  font-size: 1.25vw;
   margin-bottom: 2rem;
 }
 
@@ -619,6 +619,7 @@ div {
 
   .project__title {
     font-size: 4vw;
+    text-align: center;
   }
   
   .project__text {
@@ -650,6 +651,10 @@ div {
   .projects {
     margin: 0rem 6rem;
   }
+
+  .project__text {
+    font-size: 2vw;
+  }
 }
 
 @media screen and (max-width: 650px) {
@@ -658,23 +663,23 @@ div {
   }
 
   .projects__grid {
-    margin: 6rem 2rem;
+    margin: 4rem 2rem;
   }
   .project__information {
     border-radius: 10px;
   }
 
   .project__title {
-    font-size: 5vw;
+    font-size: 6vw;
   }
   .project__text {
     text-align: center;
-    font-size: 3vw;
-    width: 80%;
+    font-size: 4vw;
+    width: 100%;
   }
   
   .tech--used--title {
-    font-size: 4vw;
+    font-size: 5vw;
     margin-right: 2vw;
   }
 
@@ -686,20 +691,16 @@ div {
     width: 4vw;
   }
 
-  .live--website, .source--code {
-    width: 6rem;
-  }
-
   .live--website p, .source--code p {
-    font-size: 2.5vw;
+    font-size: 4vw;
   }
 
   .section__header h4 {
     font-size: 6vw;
   }
 
-  .section__number {
-    font-size: 6vw;
+  .section__header p {
+    font-size: 4vw;
   }
 }
 
@@ -730,7 +731,7 @@ div {
 }
 
 .project__grid--title {
-  font-size: 1.5vw;
+  font-size: 2vw;
   white-space: nowrap;
   color: whitesmoke;
 }
@@ -742,18 +743,20 @@ div {
 
 .project__grid--icons {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 0.5rem;
+  gap: 3rem;
   margin-left: 1rem;
 }
 
 .project__grid--icons img {
-  width: 30px;
+  width: 50px;
   height: auto;
 }
 
 .project__grid--text {
+  font-size: 1vw;
   padding: 1rem;
   margin-left: 1rem;
 }
@@ -768,11 +771,11 @@ div {
   }
 
   .project__grid--title {
-    font-size: 2.5vw;
+    font-size: 4vw;
   }
 
   .project__grid--text {
-    font-size: 1.75vw;
+    font-size: 2vw;
   }
 }
 
@@ -781,8 +784,12 @@ div {
     margin: 4rem 0rem;
   }
 
+  .other__projects--title {
+    margin-top: 8rem;
+  }
+
   .other__projects--title h4 {
-    font-size: 4vw;
+    font-size: 6vw;
   }
 
   .projects {
@@ -790,7 +797,7 @@ div {
   }
 
   .project__grid--title {
-    font-size: 5vw;
+    font-size: 6vw;
   }
   
   .project__grid--text {
@@ -799,6 +806,10 @@ div {
 
   .tech--used--icons img {
     width: 30px;
+  }
+
+  .project--information--btns {
+    gap: 2vw;
   }
 }
 
@@ -920,7 +931,7 @@ footer {
 .green--fade--btn {
   border: 1px solid rgb(2, 197, 171);
   padding: 0.3rem 1.5rem;
-  border-radius: 5px;
+  border-radius: 10px;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
   white-space: nowrap;
@@ -947,7 +958,7 @@ footer {
   border: 1px solid rgb(2, 197, 171);
   background-color: rgb(2, 197, 171);
   padding: 0.3rem 1.5rem;
-  border-radius: 5px;
+  border-radius: 10px;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
   width: 10rem;
@@ -984,9 +995,12 @@ footer {
 .blue--transition--btn {
   display: flex;
   justify-content: center;
+  font-family: "Sora";
+  font-size: 1vw;
   border: solid rgb(2, 197, 171) 1px;
+  color: white;
   width: 10rem;
-  padding: 0.5rem 0rem;
+  padding: 1rem 0.5rem;
   cursor: pointer;
   border-radius: 10px;
   background: linear-gradient(to left, #023047 50%, rgb(2, 197, 171) 50%) right;
@@ -1003,4 +1017,16 @@ footer {
 .blue--transition--btn:active {
   background-position: left;
   transform: scale(1.05);
+}
+
+/* TRANSITION SCROLL */
+.reveal{
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 1.5s all ease;
+}
+.reveal.active{
+  transform: translateY(0);
+  opacity: 1;
 }
