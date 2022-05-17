@@ -1,6 +1,4 @@
 const socialLinks = document.querySelector('.info--bar__left').children;
-console.dir(socialLinks)
-
 
 const iconClick = function () {
   Array.from(socialLinks).forEach((icon) => {
