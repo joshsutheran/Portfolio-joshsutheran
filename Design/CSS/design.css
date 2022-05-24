@@ -721,11 +721,12 @@ div {
 .project__two,
 .project__three {
   background-color: #024c71;
+  width: 33%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 2rem 1rem;
+  padding: 1rem;
   border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
 }
@@ -734,6 +735,7 @@ div {
   font-size: 2vw;
   white-space: nowrap;
   color: whitesmoke;
+  padding-bottom: 2rem;
 }
 
 .project__grid--info {
@@ -746,8 +748,9 @@ div {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 3rem;
+  gap: 1rem;
   margin-left: 1rem;
+  cursor: pointer;
 }
 
 .project__grid--icons img {
