@@ -390,6 +390,10 @@ div {
   .banner__snake {
     display: none;
   }
+
+  .contact__me {
+    font-size: 2vw !important;
+  }
 }
 
 @media screen and (max-width: 650px) {
@@ -429,6 +433,10 @@ div {
 
   .banner__language-title {
     display: none;
+  }
+
+  .contact__me {
+    font-size: 3vw !important;
   }
 }
 
